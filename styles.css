@@ -82,6 +82,14 @@ input, select {
     font-size: 15px;
     transition: all 0.3s ease;
     background: #f8f9fa;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border: 2px solid #3686ff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 .checkbox-container {
@@ -182,4 +190,12 @@ input, select {
     font-weight: 600;
     margin-left: 5px;
     transition: color 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
