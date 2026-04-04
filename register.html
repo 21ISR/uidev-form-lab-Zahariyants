@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация студента - Student Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Student Registration</h1>
+            <p class="subtitle">Create your student account</p>
+        </div>
+        <div class="register-card">
+            <form class="register-form">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="student-id">Student ID</label>
+                    <input type="text" id="student-id" name="student-id" placeholder="Enter your student ID" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="program">Select Program</label>
+                    <select id="program" name="program" required>
+                        <option value="" disabled selected>Choose your program</option>
+                        <option value="computer-science">Computer Science</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="business">Business Administration</option>
+                        <option value="medicine">Medicine</option>
+                        <option value="arts">Arts & Humanities</option>
+                        <option value="science">Natural Sciences</option>
+                    </select>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Create a password" required>
+                    </div>
+                    
+                    <div class="form-group half">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                    </div>
+                </div>
+                
+                <div class="terms-container">
+                    <label class="checkbox-container">
+                        <input type="checkbox" name="terms" required>
+                        <span class="checkmark">I agree to the<a href="#">Terms of Service</a> and<a href="#">Privacy Policy</a></span>
+                    </label>
+                </div>
+                
+                <button type="submit" class="register-btn">Create Account</button>
+            </form>
+            
+            <div class="login-link">
+                <p>Already have an account? <a href="index.html">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
